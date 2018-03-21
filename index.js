@@ -1,4 +1,9 @@
-exports.BaseCache = require('./lib/base.js');
-exports.SerializingCache = require('./lib/serializing');
-exports.MemoryCache = require('./lib/memory.js');
-exports.OnionCache = require('./lib/onion.js');
+const { BaseCache } = require('./lib/base');
+const { SerializingCache } = require('./lib/serializing');
+const { MemoryCache } = require('./lib/memory');
+const { OnionCache } = require('./lib/onion');
+
+exports.BaseCache = BaseCache;
+exports.SerializingCache = SerializingCache;
+exports.MemoryCache = MemoryCache;
+exports.OnionCache = OnionCache;

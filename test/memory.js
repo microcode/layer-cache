@@ -1,8 +1,8 @@
-const { MemoryCache } = require('../lib/memory');
+const { MemoryCache } = require('..');
 
 const assert = require('assert');
 
-describe('MemoryCache', () => {
+describe('MemoryCache', function () {
     it('should return previously set data', function () {
         const cache = new MemoryCache();
         const testKey = 'key';

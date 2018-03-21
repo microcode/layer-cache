@@ -1,5 +1,5 @@
-const { OnionCache } = require('../lib/onion');
-const { MemoryCache } = require('../lib/memory');
+const { OnionCache } = require('..');
+const { MemoryCache } = require('..');
 
 const assert = require('assert');
 
