@@ -1,6 +1,5 @@
-const { OnionCache } = require('../lib/onion');
-const { MemoryCache } = require('../lib/memory');
-const { SerializingCache } = require('../lib/serializing');
+const { MemoryCache } = require('..');
+const { SerializingCache } = require('..');
 const { DelayedCache } = require('./util/delayed');
 
 const assert = require('assert');
