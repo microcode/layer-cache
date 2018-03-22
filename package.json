@@ -1,6 +1,6 @@
 {
   "name": "layer-cache",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "main": "./index",
   "private": true,
   "author": "jesper@microcode.se",
