@@ -32,6 +32,30 @@ describe('OnionCache', function () {
                 })
             });
         });
+
+        it('should populate first cache with data from second cache', function () {
+            const fastCache = new MemoryCache();
+            const slowCache = new MemoryCache();
+            const cache = new OnionCache(fastCache, slowCache);
+            const testKey = 'key';
+            const testValue = 'value';
+
+            return slowCache.set(testKey, testValue).then(function () {
+                return fastCache.get(testKey).then((result) => {
+                    assert(result === undefined);
+                }).then(() => {
+                    return cache.get(testKey).then((result) => {
+                        assert(result === testValue);
+                    });
+                }).then(() => {
+                    return fastCache.get(testKey).then((result) => {
+                        assert(result === testValue);
+                    })
+                })
+
+            });
+        });
+
     });
 
     describe('set', function () {
