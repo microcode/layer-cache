@@ -1,5 +1,5 @@
 {
-  "name": "layer-cache",
+  "name": "@microcode/layer-cache",
   "version": "1.2.0",
   "main": "./index",
   "private": true,
