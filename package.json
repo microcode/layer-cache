@@ -2,7 +2,6 @@
   "name": "@microcode/layer-cache",
   "version": "1.2.0",
   "main": "./index",
-  "private": true,
   "author": "jesper@microcode.se",
   "dependencies": {
     "lru-cache": "^4.1.2"
